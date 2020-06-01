@@ -1,8 +1,13 @@
 import * as React from "react";
 
-interface Coord {
-  x: number;
-  y: number;
+export class Coord {
+  public x: number;
+  public y: number;
+
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
 }
 
 export interface LineProps {
@@ -25,20 +30,16 @@ const Line: React.FC<LineProps> = ({ from, to, color, width }: LineProps) => {
     [to, from] = [from, to];
   }
 
-  const style = React.useMemo(
-    () =>
-      ({
-        position: "fixed",
-        left: from.x,
-        top: from.y,
-        width: getDistance(from, to),
-        height: width || 1,
-        background: color || "black",
-        transform: `rotate(${getDegree(from, to)}deg)`,
-        transformOrigin: `${from.x}px ${from.y}px`,
-      } as const),
-    [from, to, color, width]
-  );
+  const style = {
+    position: "fixed",
+    left: from.x,
+    top: from.y,
+    width: getDistance(from, to),
+    height: width || 1,
+    background: color || "black",
+    transform: `rotate(${getDegree(from, to)}deg)`,
+    transformOrigin: `${from.x}px ${from.y}px`,
+  } as const;
 
   return <div style={style} />;
 };
