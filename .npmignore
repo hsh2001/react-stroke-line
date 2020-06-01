@@ -1,8 +1,8 @@
-# npm
-node_modules/
+node_modules/**
 
-# dev
-src
+src/**
 .gitignore
 rollup.config.js
 tsconfig.json
+
+demo/**
