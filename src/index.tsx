@@ -38,7 +38,7 @@ const Line: React.FC<LineProps> = ({ from, to, color, width }: LineProps) => {
     height: width || 1,
     background: color || "black",
     transform: `rotate(${getDegree(from, to)}deg)`,
-    transformOrigin: `${from.x}px ${from.y}px`,
+    transformOrigin: "0px 0px",
   } as const;
 
   return <div style={style} />;
