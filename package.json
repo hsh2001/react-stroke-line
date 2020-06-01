@@ -9,8 +9,12 @@
     "build": "rollup -c",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "line",
+    "graphic"
+  ],
+  "author": "hsh2001",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^24.0.20",
