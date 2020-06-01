@@ -16,6 +16,10 @@
   ],
   "author": "hsh2001",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsh2001/react-stroke-line.git"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.20",
     "@types/react": "^16.9.11",
