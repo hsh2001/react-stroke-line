@@ -1,6 +1,6 @@
 {
-  "name": "react-module-boilerplate",
-  "version": "0.1.0",
+  "name": "react-stroke-line",
+  "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -37,7 +37,10 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testPathIgnorePatterns": ["/demo/", "/build/"]
+    "testPathIgnorePatterns": [
+      "/demo/",
+      "/build/"
+    ]
   },
   "peerDependencies": {
     "react": "^16.11.0",
