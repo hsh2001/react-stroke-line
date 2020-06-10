@@ -25,7 +25,7 @@ function getDegree(from: Coord, to: Coord): number {
   return (Math.atan2(to.y - from.y, to.x - from.x) * 180) / Math.PI;
 }
 
-const Line: React.FC<LineProps> = ({ from, to, color, width }: LineProps) => {
+export const Line: React.FC<LineProps> = ({ from, to, color, width }: LineProps) => {
   if (from.x > to.x) {
     [to, from] = [from, to];
   }
