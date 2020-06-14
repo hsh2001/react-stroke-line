@@ -17,12 +17,12 @@ import Line from "react-stroke-line";
 
 function App() {
   return (
-    <>
+    <div>
       <Line 
         from={{ x: 100, y: 100 }} 
         to={{ x: 0, y: 0 }} 
       />
-    </>
+    <div/>
   );
 }
 
