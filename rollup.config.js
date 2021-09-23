@@ -5,8 +5,12 @@ import resolve from "rollup-plugin-node-resolve";
 
 import pkg from "./package.json";
 
+const dependencies = ({ dependencies }) => Object.keys(dependencies || {});
+
+
 export default {
   input: "src/index.tsx",
+  external: id => dependencies(pkg).includes(id),
   output: [
     {
       file: pkg.main,
